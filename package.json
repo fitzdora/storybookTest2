@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "Demo basic React comcepts and constructs",
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "storybook": "cross-env BROWSER=none NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook"
   },
   "author": "Diarmuid O Connor",
   "license": "ISC",
   "devDependencies": {
-    "@storybook/addon-actions": "^6.4.18",
-    "@storybook/addon-links": "^6.4.18",
-    "@storybook/react": "^6.4.18",
-    "html-webpack-plugin": "^5.5.0"
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-vite": "^0.2.6",
+    "@storybook/react": "^6.5.14",
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
